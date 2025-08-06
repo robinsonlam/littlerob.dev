@@ -8,9 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/test-utils',
     '@nuxt/ui',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
   ],
-
   fonts: {
     families: [
       { name: 'Pixelify Sans', provider: 'google' }

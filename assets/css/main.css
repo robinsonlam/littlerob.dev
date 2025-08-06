@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@them default {
+  --font-sans: "Pixelify Sans", monospace, sans-serif;
+}
+
+@theme static {
+  --color-pixel-cyan-500: #65f0ff;
+}

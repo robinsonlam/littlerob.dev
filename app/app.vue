@@ -1,9 +1,12 @@
 <template>
   <div>
-    <NavigationBar />
-    <main class="main-content">
-      <NuxtPage />
-    </main>
+    <UApp>
+      <NavigationBar />
+      <main class="main-content">
+        <NuxtPage />
+      </main>
+    </UApp>
+
     <NuxtRouteAnnouncer />
   </div>
 </template>
