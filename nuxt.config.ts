@@ -9,7 +9,9 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     '@nuxt/fonts',
+    '@compodium/nuxt'
   ],
+  css: ["~/assets/css/main.css"],
   fonts: {
     families: [
       { name: 'Pixelify Sans', provider: 'google' }
