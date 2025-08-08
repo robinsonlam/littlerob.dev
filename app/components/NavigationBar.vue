@@ -1,6 +1,6 @@
 <template>
-  <nav class="font-sans w-full fixed">
-    <div class="flex justify-between items-center px-10 md:px-20 py-10">
+  <nav class="font-sans w-full fixed bg-black">
+    <div class="flex justify-between items-center px-10 py-10">
       <!-- Logo/Brand -->
       <ULink to="/" active-class="text-white">littlerob.</ULink>
 
