@@ -5,7 +5,7 @@ export default defineAppConfig({
       secondary: 'cyan'
     },
     container: {
-      base: 'w-full max-w-(--ui-container) mx-auto px-10 sm:px-10 lg:px-10',
+      base: 'w-full max-w-(--ui-container) mx-auto px-10 md:px-20',
     },
     button: {
       slots: {

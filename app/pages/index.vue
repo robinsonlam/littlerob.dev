@@ -1,8 +1,8 @@
 <template>
   <UContainer class="max-w-none w-auto flex flex-col items-center justify-center mt-[-12rem]">
     <div class="flex flex-col">
-      <h1 class="text-4xl">Hello. I am <span class="text-secondary">Rob</span>.</h1>
-      <p class="text-base mb-4">
+      <h1 class="text-4xl sm:text-5xl">Hello. I am <span class="text-secondary">Rob</span>.</h1>
+      <p class="text-base mb-4 leading-[1.6rem]">
         I like software engineering, robots, pixel games and volleyball.<br>
         Here's a little more about me:
       </p>
