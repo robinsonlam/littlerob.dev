@@ -4,4 +4,6 @@
 @theme static {
   --font-sans: "Pixelify Sans", monospace, sans-serif;
   --color-cyan-500: #65f0ff;
+  --color-yellow-500: #ffbb00;
+  --color-purple-500: #b95ddd;
 }

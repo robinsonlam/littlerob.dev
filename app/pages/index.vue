@@ -1,36 +1,16 @@
 <template>
-  <div class="home-page">
-    <div class="hero-section">
-      <h1 class="hero-title">Hello. I am <span class="highlight">Rob</span>.</h1>
-      <p class="hero-subtitle">
+  <UContainer class="max-w-none w-auto flex flex-col items-center">
+    <div class="flex flex-col">
+      <h1 class="text-4xl">Hello. I am <span class="text-secondary">Rob</span>.</h1>
+      <p class="text-base mb-4">
         I like software engineering, robots, pixel games and volleyball.<br>
         Here's a little more about me:
       </p>
-      <div class="hero-buttons">
-        <NuxtLink to="/projects" class="hero-btn">PROJECTS</NuxtLink>
-        <NuxtLink to="/career" class="hero-btn">CAREER</NuxtLink>
-        <NuxtLink to="/skills" class="hero-btn">SKILLS</NuxtLink>
+      <div class="flex gap-4 justify-start flex-wrap">
+        <UButton to="/projects" variant="outline" color="primary">PROJECTS</UButton>
+        <UButton to="/career" variant="outline" color="primary">CAREER</UButton>
+        <UButton to="/skills" variant="outline" color="primary">SKILLS</UButton>
       </div>
     </div>
-  </div>
+  </UContainer>
 </template>
-
-<style scoped>
-.home-page {
-  font-family: 'Pixelify Sans', monospace;
-  padding: 1rem;
-  text-align: center;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-btn {
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-}
-</style>
