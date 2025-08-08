@@ -1,5 +1,5 @@
 <template>
-  <nav class="font-sans w-full fixed bg-black">
+  <nav class="font-sans w-full fixed bg-[#121212] z-10">
     <div class="flex justify-between items-center px-10 py-10">
       <!-- Logo/Brand -->
       <ULink to="/" active-class="text-white">littlerob.</ULink>

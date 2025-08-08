@@ -1,7 +1,7 @@
 <template>
   <UContainer class="pt-[6rem]">
     <div class="font-sans py-8 md:w-150 lg:w-249 mx-auto">
-      <div class="text-center mb-8">
+      <div class="text-center mb-8  ">
         <h1 class="text-4xl font-bold text-white mb-4">My <span class="text-primary-500">Journey</span></h1>
         <p class="text-white">My professional career timeline</p>
       </div>
@@ -13,7 +13,15 @@
         color="primary"
         size="lg"
         class="w-full"
-      />
+      >
+
+        <template #description="{ item }">
+          <div class="flex gap-1 flex-col">
+            <h2 class="text-sm text-primary font-medium mb-4">{{ item.company }}</h2>
+            <p>{{ item.description }}</p>
+          </div>
+        </template>
+      </UTimeline>
     </div>
   </UContainer>
 </template>
@@ -23,28 +31,30 @@ import type { TimelineItem } from '@nuxt/ui'
 
 const careerItems: TimelineItem[] = [
   {
-    date: '2024 - 2025',
+    date: 'Apr 2024 - Jul 2025',
     title: 'Senior Software Engineer',
-    company: 'UBET.io',
-    description: 'TechCorp Solutions\n\nLead development of scalable web applications using React and Node.js. Mentored junior developers and established best practices for code quality and testing. Architected microservices infrastructure supporting 10+ users.',
+    company: 'ubet.io',
+    description: "Led end-to-end development of two major promotional features that enhanced user acquisition and retention while reducing promotional abuse; \n\nHot Bets\nDeveloped a dynamic promotion system enabling users to access premium odds, driving both new user acquisition and existing customer engagement.\n\nUCASH Bonus Wallet\nArchitected a comprehensive promotional balance system allowing users to earn credits through marketing campaigns and tournaments, with built-in turnover requirements to minimize abuse and protect business margins.\n\nBoth were built using Nest.js microservices architecture with Kafka event-driven communication, ensuring high performance and reliability across the promotions domain.\n\nCollaborated closely with Product Owners, Business Analysts, and QA teams to gather requirements, define technical specifications, and deliver complete software solutions from concept to production.\n\n(React / Next.js / MUI / Nest.js / TypeORM / SQL / MongoDB / Kafka / Elastic)",
+  }, {
+    date: 'Apr 2019 - Feb 2024',
+    title: 'Full Stack Software Engineer / Team Lead (Scheduling & Timeoff)',
+    company: 'Playvox / AgyleTime',
+    description: "- Created, maintained and oversaw the Scheduling and Leave domain and their multitude of features\n\n- Mentored several engineers following SOLID principles, steering teams towards event driven architecture and strong testing suites\n\n- Provided expert technical and business domain knowledge around products and their technical functionality\n\n- Architecting & developing major features end-to-end for a workforce management platform. \n\n- Provided on-call and T3 support, debugging, root cause and impact analysis as well as developing fixes.\n\n(Angular.js, Vue3, MongoDB, AWS, ECS, CloudWatch, Serverless, Lambda, Datadog, PagerDuty)",
+  }, {
+    date: 'Nov 2016 - Feb 2018',
+    title: 'UI/UX & Full Stack Software Engineer (QE:Touch)',
+    company: 'Qantas / Prismatik',
+    description: "- Conducted UX testing with users on-site and developed processes to attain valuable user feedback\n\n- Provided professional technical knowledge to make purposeful and valuable decisions during development\n\n- Leading the design and front-end development for an in-house application developed for Engineers to streamline their workflow. \n\n (React, React Native, Cordova, Node.js, AWS, SES)",
+  }, {
+    date: 'Feb 2016 - Aug 2016',
+    title: 'Front End Developer',
+    company: 'Jaxsta Music',
+    description: "- Built and maintained the UI as the sole front-end engineer for a music credentials database (IMDB for artists)\n\n (Vue, Ruby on Rails)",
+  }, {
+    date: 'Nov 2015 - Ongoing',
+    title: 'Contract/Freelance Full Stack Engineer',
+    company: 'For The People Agency, Snepo Research & Various Companies',
+    description: "- Conducted UX testing with users on-site and developed processes to attain valuable user feedback\n\n- Provided professional technical knowledge to make purposeful and valuable decisions during development\n\n- Leading the design and front-end development for an in-house application developed for Aircraft Maintenance Engineers to streamline their workflow. (React, React Native, Cordova, Node.js, AWS)\n\n- Front-end for client-facing websites for digital agencies, councils and small businesses (HTML, CSS, React, Ember, Angular)\n\n- Marketing touch-screen application for a leading automotive industry (React Native, CSS)\n\n- Web-scraping museum display application (Ruby on Rails)\n\n- UI and front-end logic for various dashboards",
   },
-  {
-    date: '2021-2023',
-    title: 'Full Stack Developer',
-    description: 'StartupXYZ\n\nBuilt MVP from scratch and scaled it to 100K+ users. Implemented real-time features using WebSockets and optimized database performance. Collaborated closely with design and product teams.',
-    value: 'fullstack-dev'
-  },
-  {
-    date: '2019-2021',
-    title: 'Software Developer Intern',
-    description: 'BigTech Inc\n\nDeveloped automation tools that reduced manual testing time by 80%. Created data visualization dashboards for internal metrics. Participated in code reviews and agile development processes.',
-    value: 'intern'
-  },
-  {
-    date: '2017-2021',
-    title: 'Computer Science Degree',
-    description: 'University of Technology\n\nBachelor of Science in Computer Science with focus on software engineering and robotics. Completed senior capstone project in autonomous navigation. Active member of robotics club and volleyball team.',
-    value: 'education'
-  }
 ]
 </script>

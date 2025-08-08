@@ -2,7 +2,7 @@ export default defineAppConfig({
  ui: {
     colors: {
       primary: 'yellow',
-      secondary: 'cyan'
+      secondary: 'cyan',
     },
     container: {
       base: 'w-full max-w-(--ui-container) mx-auto px-10',
@@ -67,8 +67,8 @@ export default defineAppConfig({
         separator: 'flex-1 rounded-full bg-elevated',
         wrapper: 'bg-white px-5 py-5',
         date: 'text-xs text-black bg-primary px-2 py-0.5 inline-block ml-auto',
-        title: 'font-bold text-sm py-2',
-        description: 'text-black text-wrap text-xs leading-[1.2rem]'
+        title: 'font-medium text-lg pt-2 pb-1',
+        description: 'text-black text-wrap text-xs leading-[1.2rem] whitespace-pre-wrap'
       },
     }
   }
