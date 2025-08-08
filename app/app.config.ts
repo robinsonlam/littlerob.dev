@@ -17,7 +17,7 @@ export default defineAppConfig({
           variant: 'outline',
           class: 'ring-2 ring-inset ring-primary \
           text-primary-300 bg-primary-500/20 shadow-xs shadow-purple-500 transform \
-          transition-shadow transition-translate transition-translate  \
+          transition-shadow transition-translate transition-translate \
           hover:bg-primary-500/30 hover:shadow-md hover:shadow-purple-500/50 hover:-translate-y-1 \
           focus:bg-primary-500/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary \
           active:bg-primary-500/60 active:text-primary-300 active:shadow-yellow-500/60 active:shadow-md active:-translate-y-0.5 \
