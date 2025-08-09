@@ -2,10 +2,10 @@ export default defineAppConfig({
  ui: {
     colors: {
       primary: 'yellow',
-      secondary: 'cyan'
+      secondary: 'cyan',
     },
     container: {
-      base: 'w-full max-w-(--ui-container) mx-auto px-10 sm:px-10 lg:px-10',
+      base: 'w-full max-w-(--ui-container) mx-auto px-10',
     },
     button: {
       slots: {
@@ -57,6 +57,17 @@ export default defineAppConfig({
           ]
         }
       ]
+    },
+    timeline: {
+      slots: {
+        root: 'flex gap-1.5',
+        item: 'group relative flex flex-1 gap-3',
+        container: 'relative flex items-center gap-1.5',
+        indicator: 'group-data-[state=completed]:text-inverted group-data-[state=active]:text-inverted text-muted size-3',
+        separator: 'flex-1 rounded-full bg-elevated',
+        wrapper: 'bg-white px-5 py-5',
+        title: 'text-lg/6 pt-2 pb-4',
+      },
     }
   }
 })
