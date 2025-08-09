@@ -15,10 +15,40 @@
         class="w-full"
       >
 
+        <template #date="{ item }">
+          <div class="flex flex-row items-start">
+            <span class="text-lg text-black font-medium">{{ item.title }}</span>
+
+            <span class="bg-secondary px-2 py-0 inline-block ml-auto text-base font-numbers tracking-wide text-black text-nowrap">
+              {{ item.date }}
+            </span>
+          </div>
+        </template>
+
+        <template #title="{ item }">
+          <span></span>
+        </template>
+
+
         <template #description="{ item }">
           <div class="flex gap-1 flex-col">
-            <h2 class="text-sm text-primary font-medium mb-4">{{ item.company }}</h2>
-            <p>{{ item.description }}</p>
+
+            <UCollapsible class="flex flex-col gap-2 w-full text-black">
+              <div class="flex flex-row justify-between items-end">
+                <h2 class="text-md text-primary-600">{{ item.company }}</h2>
+                <UButton
+                    label="Role Details..."
+                    color="neutral"
+                    trailing-icon="i-lucide-chevron-down"
+                    class="cursor-pointer justify-between text-xs"
+                  />
+              </div>
+  
+              <template #content>
+                <p class="text-xs text-black text-wrap whitespace-pre-wrap pt-2">{{ item.description }}</p>
+              </template>
+            </UCollapsible>
+
           </div>
         </template>
       </UTimeline>
@@ -33,7 +63,7 @@ const careerItems: TimelineItem[] = [
   {
     date: 'Apr 2024 - Jul 2025',
     title: 'Senior Software Engineer',
-    company: 'ubet.io',
+    company: 'UBET / ubet.io',
     description: "Led end-to-end development of two major promotional features that enhanced user acquisition and retention while reducing promotional abuse; \n\nHot Bets\nDeveloped a dynamic promotion system enabling users to access premium odds, driving both new user acquisition and existing customer engagement.\n\nUCASH Bonus Wallet\nArchitected a comprehensive promotional balance system allowing users to earn credits through marketing campaigns and tournaments, with built-in turnover requirements to minimize abuse and protect business margins.\n\nBoth were built using Nest.js microservices architecture with Kafka event-driven communication, ensuring high performance and reliability across the promotions domain.\n\nCollaborated closely with Product Owners, Business Analysts, and QA teams to gather requirements, define technical specifications, and deliver complete software solutions from concept to production.\n\n(React / Next.js / MUI / Nest.js / TypeORM / SQL / MongoDB / Kafka / Elastic)",
   }, {
     date: 'Apr 2019 - Feb 2024',
@@ -53,7 +83,7 @@ const careerItems: TimelineItem[] = [
   }, {
     date: 'Nov 2015 - Ongoing',
     title: 'Contract/Freelance Full Stack Engineer',
-    company: 'For The People Agency, Snepo Research & Various Companies',
+    company: 'For The People Agency, Snepo Research & Various Businesses & Companies',
     description: "- Conducted UX testing with users on-site and developed processes to attain valuable user feedback\n\n- Provided professional technical knowledge to make purposeful and valuable decisions during development\n\n- Leading the design and front-end development for an in-house application developed for Aircraft Maintenance Engineers to streamline their workflow. (React, React Native, Cordova, Node.js, AWS)\n\n- Front-end for client-facing websites for digital agencies, councils and small businesses (HTML, CSS, React, Ember, Angular)\n\n- Marketing touch-screen application for a leading automotive industry (React Native, CSS)\n\n- Web-scraping museum display application (Ruby on Rails)\n\n- UI and front-end logic for various dashboards",
   },
 ]

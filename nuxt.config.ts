@@ -14,7 +14,8 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   fonts: {
     families: [
-      { name: 'Pixelify Sans', provider: 'google' }
+      { name: 'Pixelify Sans', provider: 'google' },
+      { name: 'Micro 5', provider: 'google' }
     ]
   }
 })

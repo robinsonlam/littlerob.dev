@@ -66,9 +66,7 @@ export default defineAppConfig({
         indicator: 'group-data-[state=completed]:text-inverted group-data-[state=active]:text-inverted text-muted size-3',
         separator: 'flex-1 rounded-full bg-elevated',
         wrapper: 'bg-white px-5 py-5',
-        date: 'text-xs text-black bg-primary px-2 py-0.5 inline-block ml-auto',
-        title: 'font-medium text-lg pt-2 pb-1',
-        description: 'text-black text-wrap text-xs leading-[1.2rem] whitespace-pre-wrap'
+        title: 'text-lg/6 pt-2 pb-4',
       },
     }
   }
